@@ -11,10 +11,15 @@ public class locators {
 
     @Test
     public void openGoogle(){
+
         WebDriverManager.chromedriver().setup();
+
         WebDriver driver=new ChromeDriver();
+
         driver.get("https://www.facebook.com");
+
         WebElement myElement=driver.findElement(By.id("email"));
+
         myElement.sendKeys("Selenium");
 
     }
